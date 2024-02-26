@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">AndroidProjectCollection</string>
+    <string name="btn_back">back to main</string>
+
+    <string name="btn_app_layout">Open Layout Exercise</string>
+    <string name="layout_app">Mugstagram</string>
+    <string name="plntxt_comment">type comment here...</string>
+    <string name="txt_invisible">ㅤ</string>
+    <string name="btn_comment">Comment</string>
+    <string name="txt_reply_template">{comment placeholder}</string>
+    <string name="prof1_name">John Doe</string>
+    <string name="prof2_name">Jane Doe</string>
+    <string name="prof3_name">Dranko Fullbody</string>
+    <string name="prof4_name">Josh Drake</string>
+    <string name="prof5_name">Sammy Samir</string>
+    <string name="prof6_name">Blair Whitney</string>
+    <string name="prof7_name">Axel Lamenco</string>
+    <string name="prof8_name">Needles Kane</string>
+
+    <string name="btn_app_button">Open Button Exercise</string>
+    <string name="btn_disappear">Evanesco!</string>
+    <string name="btn_toast">Toast?</string>
+    <string name="btn_change_buttonBG">Change this color</string>
+    <string name="btn_change_appBG">Change application bg color</string>
+
+    <string name="btn_app_calculator">Open Calculator</string>
+    <string name="btn_0">0</string>
+    <string name="btn_1">1</string>
+    <string name="btn_2">2</string>
+    <string name="btn_3">3</string>
+    <string name="btn_4">4</string>
+    <string name="btn_5">5</string>
+    <string name="btn_6">6</string>
+    <string name="btn_7">7</string>
+    <string name="btn_8">8</string>
+    <string name="btn_9">9</string>
+    <string name="btn_add">+</string>
+    <string name="btn_subtract">-</string>
+    <string name="btn_multiply">x</string>
+    <string name="btn_divide">/</string>
+    <string name="btn_equals">=</string>
+    <string name="btn_cancel">C</string>
+
+</resources>
