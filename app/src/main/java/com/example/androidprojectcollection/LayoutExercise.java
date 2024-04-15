@@ -8,27 +8,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.androidprojectcollection.databinding.ActivityButtonExerciseBinding;
+import com.example.androidprojectcollection.databinding.ActivityLayoutExerciseBinding;
+
 public class LayoutExercise extends AppCompatActivity {
+
+    private ActivityLayoutExerciseBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_layout_exercise);
+        binding = ActivityLayoutExerciseBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        Button buttBack = (Button) findViewById(R.id.btnBack);
-
-        buttBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ActivityBack();
-            }
-        });
+        binding.btnBack.setOnClickListener(view -> finish());
     }
-
-    public void ActivityBack(){
-        Intent intent = new Intent(LayoutExercise.this, MainActivity.class);
-        startActivity(intent);
-    }
-
-
 }

@@ -10,72 +10,36 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.example.androidprojectcollection.databinding.ActivityButtonExerciseBinding;
+
 public class ButtonExercise extends AppCompatActivity {
+
+    private ActivityButtonExerciseBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_button_exercise);
+        binding = ActivityButtonExerciseBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         final boolean[] isDarkMode = {false};
 
-        Button buttBack = (Button) findViewById(R.id.btnBackMenu);
-        Button buttDisappear = (Button) findViewById(R.id.btnDisappear);
-        Button buttToast = (Button) findViewById(R.id.btnToast);
-        Button buttOpenActivity = (Button) findViewById(R.id.btnChangeButttonBG);
-        Button buttChangeButtonColor = (Button) findViewById(R.id.btnChangeButttonBG);
-        Button buttChangeAppColor = (Button) findViewById(R.id.btnChangeBG);
+        binding.btnBackMenu.setOnClickListener(view -> finish());
 
-        buttBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                OpenMenu();
+        binding.btnDisappear.setOnClickListener(view -> binding.btnDisappear.setVisibility(View.GONE));
+
+        binding.btnToast.setOnClickListener(view -> Toast.makeText(ButtonExercise.this, "I'M GONNA TOAAAASSSTTTT",Toast.LENGTH_LONG).show());
+
+        binding.btnChangeButttonBG.setOnClickListener(view -> binding.btnChangeButttonBG.setBackgroundColor(Color.parseColor("#7077A1")));
+
+        binding.btnChangeBG.setOnClickListener(view ->  {
+            if(isDarkMode[0]) {
+                getWindow().getDecorView().setBackgroundColor(Color.parseColor("#FFFFFF"));
+                isDarkMode[0] = false;
+            }
+            else {
+                getWindow().getDecorView().setBackgroundColor(Color.parseColor("#2D3250"));
+                isDarkMode[0] = true;
             }
         });
-
-        buttDisappear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                buttDisappear.setVisibility(View.GONE);
-            }
-        });
-
-        buttToast.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(ButtonExercise.this, "I'M GONNA TOAAAASSSTTTT",Toast.LENGTH_LONG).show();
-            }
-        });
-
-        buttOpenActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                System.out.println("Nothing yet");
-            }
-        });
-
-        buttChangeButtonColor.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                buttChangeButtonColor.setBackgroundColor(Color.parseColor("#7077A1"));
-            }
-        });
-
-        buttChangeAppColor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(isDarkMode[0]) {
-                    getWindow().getDecorView().setBackgroundColor(Color.parseColor("#FFFFFF"));
-                    isDarkMode[0] = false;
-                }
-                else {
-                    getWindow().getDecorView().setBackgroundColor(Color.parseColor("#2D3250"));
-                    isDarkMode[0] = true;
-                }
-            }
-        });
-    }
-
-    public void OpenMenu(){
-        Intent intent = new Intent(ButtonExercise.this, MainActivity.class);
-        startActivity(intent);
     }
 }

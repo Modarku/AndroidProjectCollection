@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttLayExercise = (Button) findViewById(R.id.btnLayoutExercise);
         Button buttButtExercise = (Button) findViewById(R.id.btnButtonExercise);
         Button buttCalcExercise = (Button) findViewById(R.id.btnOpenCalcu);
+        Button buttConnectExercise = (Button) findViewById(R.id.btnConnectThree);
 
         buttLayExercise.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         buttCalcExercise.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {openCalcuExercise();}
         });
+
+        buttConnectExercise.setOnClickListener(v -> openConnectThree());
     }
 
     public void openLayoutExercise(){
@@ -44,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openCalcuExercise(){
         Intent intent = new Intent(MainActivity.this, CalculatorExercise.class);
+        startActivity(intent);
+    }
+
+    public void openConnectThree(){
+        Intent intent = new Intent(MainActivity.this, ConnectThreeExercise.class);
         startActivity(intent);
     }
 

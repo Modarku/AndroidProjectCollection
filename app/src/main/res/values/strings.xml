@@ -34,11 +34,19 @@
     <string name="btn_7">7</string>
     <string name="btn_8">8</string>
     <string name="btn_9">9</string>
+    <string name="btn_decimal">.</string>
     <string name="btn_add">+</string>
     <string name="btn_subtract">-</string>
-    <string name="btn_multiply">x</string>
+    <string name="btn_multiply">*</string>
     <string name="btn_divide">/</string>
     <string name="btn_equals">=</string>
     <string name="btn_cancel">C</string>
+
+    <string name="ct_btn_app_connectThree">Play Connect Three</string>
+    <string name="ct_btn_back">Back</string>
+    <string name="ct_btn_reset">Reset Game</string>
+    <string name="ct_tv_state">Player 1 turn</string>
+    <string name="ct_btn_drop">▼</string>
+    <string name="ct_tv_tip">Click the \'▼\' to play</string>
 
 </resources>
