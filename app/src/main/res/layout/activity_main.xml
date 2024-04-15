@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_app_calculator"
-        app:layout_constraintBottom_toTopOf="@+id/btnConnectThree"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpenTicTacToe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnButtonExercise" />
@@ -42,9 +42,49 @@
         android:id="@+id/btnConnectThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ct_btn_app_connectThree"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/btn_app_connectThree"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpenIntents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpenTicTacToe" />
+
+    <Button
+        android:id="@+id/btnOpenTicTacToe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_app_midterm"
+        app:layout_constraintBottom_toTopOf="@+id/btnConnectThree"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnOpenCalcu" />
+
+    <Button
+        android:id="@+id/btnOpenFragments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_app_fragments"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpenMenus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpenIntents" />
+
+    <Button
+        android:id="@+id/btnOpenIntents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_app_passingIntents"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpenFragments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnectThree" />
+
+    <Button
+        android:id="@+id/btnOpenMenus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_app_menus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpenFragments" />
 </androidx.constraintlayout.widget.ConstraintLayout>

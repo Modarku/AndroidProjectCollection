@@ -181,6 +181,5 @@ public class ConnectThreeExercise extends AppCompatActivity {
             binding.ctBtnRow3.setEnabled(false);
             binding.ctBtnRow4.setEnabled(false);
         }
-
     }
 }

@@ -42,11 +42,38 @@
     <string name="btn_equals">=</string>
     <string name="btn_cancel">C</string>
 
-    <string name="ct_btn_app_connectThree">Play Connect Three</string>
+    <string name="btn_app_midterm">Play Tic Tac Toe</string>
+
+    <string name="btn_app_connectThree">Play Connect Three</string>
     <string name="ct_btn_back">Back</string>
     <string name="ct_btn_reset">Reset Game</string>
     <string name="ct_tv_state">Player 1 turn</string>
     <string name="ct_btn_drop">▼</string>
     <string name="ct_tv_tip">Click the \'▼\' to play</string>
+
+    <string name="btn_app_passingIntents">Passing Intents</string>
+    <string name="pi1_tv_title">Student Registration Form</string>
+    <string name="pi1_tv_name">Complete Name</string>
+    <string name="pi1_tv_name_first">First Name</string>
+    <string name="pi1_tv_name_last">Last Name</string>
+    <string name="pi1_tv_gender">Gender</string>
+    <string name="pi1_tv_gender_male">Male</string>
+    <string name="pi1_tv_gender_female">Female</string>
+    <string name="pi1_tv_gender_other">Other</string>
+    <string name="pi1_tv_birth_date">Birth Date</string>
+    <string name="pi1_tv_birth_place">Birth Place</string>
+    <string name="pi1_tv_phoneno">Phone Number</string>
+    <string name="pi1_tv_email">Email Address</string>
+    <string name="pi1_tv_parent1">Parent 1</string>
+    <string name="pi1_tv_parent2">Parent 2</string>
+    <string name="pi1_tv_parent_occupation">Occupation</string>
+    <string name="pi1_btn_clear">Clear</string>
+    <string name="pi1_btn_submit">Submit</string>
+
+
+
+    <string name="btn_app_fragments">Fragements</string>
+
+    <string name="btn_app_menus">Menus</string>
 
 </resources>
