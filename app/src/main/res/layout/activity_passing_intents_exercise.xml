@@ -5,6 +5,7 @@
     android:id="@+id/pi1Container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="24dp"
     tools:context=".PassingIntentsExercise">
 
     <LinearLayout
@@ -12,17 +13,23 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/pi1BtnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_back" />
+
         <TextView
             android:id="@+id/pi1TxtTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pi1_tv_title" />
+            android:text="@string/pi_tv_title" />
 
         <TextView
             android:id="@+id/pi1TxtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pi1_tv_name" />
+            android:text="@string/pi_tv_name" />
 
         <LinearLayout
             android:id="@+id/pi1ContainerNameInpt"
@@ -36,8 +43,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/pi1_tv_name_first" />
+                android:hint="@string/pi_tv_name_first"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/pi1InptNameLast"
@@ -45,15 +52,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/pi1_tv_name_last" />
+                android:hint="@string/pi_tv_name_last"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/pi1TxtGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pi1_tv_gender" />
+            android:text="@string/pi_tv_gender" />
 
         <RadioGroup
             android:id="@+id/pi1RadioContainerGender"
@@ -66,21 +73,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/pi1_tv_gender_male" />
+                android:text="@string/pi_tv_gender_male" />
 
             <RadioButton
                 android:id="@+id/pi1RadioFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/pi1_tv_gender_female" />
+                android:text="@string/pi_tv_gender_female" />
 
             <RadioButton
                 android:id="@+id/pi1RadioOther"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/pi1_tv_gender_other" />
+                android:text="@string/pi_tv_gender_other" />
         </RadioGroup>
 
         <LinearLayout
@@ -94,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/pi1_tv_birth_date" />
+                android:text="@string/pi_tv_birth_date" />
 
             <EditText
                 android:id="@+id/pi1InptBirthDate"
@@ -102,8 +109,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="date"
-                android:text="@string/pi1_tv_birth_date" />
+                android:hint="@string/pi_tv_birth_date"
+                android:inputType="date" />
         </LinearLayout>
 
         <LinearLayout
@@ -117,7 +124,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/pi1_tv_birth_place" />
+                android:text="@string/pi_tv_birth_place" />
 
             <EditText
                 android:id="@+id/pi1InptBirthPlace"
@@ -125,8 +132,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/pi1_tv_birth_place" />
+                android:hint="@string/pi_tv_birth_place"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -140,7 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/pi1_tv_email" />
+                android:text="@string/pi_tv_email" />
 
 
             <EditText
@@ -149,8 +156,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textEmailAddress"
-                android:text="@string/pi1_tv_email" />
+                android:hint="@string/pi_tv_email"
+                android:inputType="textEmailAddress" />
         </LinearLayout>
 
         <Space
@@ -161,7 +168,7 @@
             android:id="@+id/pi1TxtParent1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pi1_tv_parent1" />
+            android:text="@string/pi_tv_parent1" />
 
         <LinearLayout
             android:id="@+id/pi1ContainerParent1NameInpt"
@@ -175,8 +182,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/pi1_tv_name_first" />
+                android:hint="@string/pi_tv_name_first"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/pi1InptParent1NameLast"
@@ -184,8 +191,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/pi1_tv_name_last" />
+                android:hint="@string/pi_tv_name_last"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <Space
@@ -196,7 +203,7 @@
             android:id="@+id/pi1TxtParent2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pi1_tv_parent2" />
+            android:text="@string/pi_tv_parent2" />
 
         <LinearLayout
             android:id="@+id/pi1ContainerParent2NameInpt"
@@ -210,8 +217,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/pi1_tv_name_first" />
+                android:hint="@string/pi_tv_name_first"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/pi1InptParent2NameLast"
@@ -219,8 +226,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/pi1_tv_name_last" />
+                android:hint="@string/pi_tv_name_last"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -234,14 +241,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/pi1_btn_clear" />
+                android:text="@string/pi_btn_clear" />
 
             <Button
                 android:id="@+id/pi1BtnSubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/pi1_btn_submit" />
+                android:text="@string/pi_btn_submit" />
         </LinearLayout>
 
     </LinearLayout>

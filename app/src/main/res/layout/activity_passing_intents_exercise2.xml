@@ -2,8 +2,242 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pi2Container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PassingIntentsExercise2">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pi2TxtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pi2_tv_title" />
+
+        <TextView
+            android:id="@+id/pi2TxtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pi_tv_name" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:id="@+id/pi2ContainerNameInpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pi2InptNameFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="@string/pi_tv_name_first" />
+
+            <TextView
+                android:id="@+id/pi2InptNameLast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/pi_tv_name_last"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:id="@+id/pi2ContainerGenderInpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pi2TxtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pi_tv_gender" />
+
+            <TextView
+                android:id="@+id/pi2InptGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/pi_tv_gender"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:id="@+id/pi2ContainerBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pi2TxtBirthDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pi_tv_birth_date" />
+
+            <TextView
+                android:id="@+id/pi2InptBirthDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/pi_tv_birth_date"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:id="@+id/pi2ContainerBirthPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pi2TxtBirthPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pi_tv_birth_place" />
+
+            <TextView
+                android:id="@+id/pi2InptBirthPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/pi_tv_birth_place"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:id="@+id/pi2ContainerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pi2TxtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pi_tv_email" />
+
+
+            <TextView
+                android:id="@+id/pi2InptEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/pi_tv_email"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/pi2TxtParent1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pi_tv_parent1" />
+
+        <LinearLayout
+            android:id="@+id/pi2ContainerParent1NameInpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pi2InptParent1NameFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/pi_tv_name_first"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/pi2InptParent1NameLast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/pi_tv_name_last"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/pi2TxtParent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pi_tv_parent2" />
+
+        <LinearLayout
+            android:id="@+id/pi2ContainerParent2NameInpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pi2InptParent2NameFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/pi_tv_name_first"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/pi2InptParent2NameLast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/pi_tv_name_last"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pi2BtnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ct_btn_back" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
