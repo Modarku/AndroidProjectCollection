@@ -39,7 +39,7 @@ public class MenuExercise extends AppCompatActivity {
                 btnChanger.setImageResource(R.drawable.m_squarebtn);
                 message = "The classic in 90s website GUI!";
                 break;
-            case R.id.mItemOval:
+            case R.id.mItemColor:
                 btnChanger.setImageResource(R.drawable.m_ovalbtn);
                 message = "I'm a cirrrrccccccllle";
                 break;
