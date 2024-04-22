@@ -81,9 +81,10 @@
     <string name="pi_btn_submit">Submit</string>
 
 
-
     <string name="btn_app_fragments">Fragements</string>
 
     <string name="btn_app_menus">Menus</string>
+
+    <string name="what">\?\?\?</string>
 
 </resources>

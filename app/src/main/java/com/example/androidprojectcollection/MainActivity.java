@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         buttPassingIntents.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PassingIntentsExercise.class)));
 
         buttTicTacMidterm.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TicTacToeMidterm.class)));
+
+        buttMenus.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, MenuExercise.class)));
     }
 
     public void openLayoutExercise(){
