@@ -43,6 +43,15 @@
     <string name="btn_cancel">C</string>
 
     <string name="btn_app_midterm">Play Tic Tac Toe</string>
+    <string name="tv_gametitle">TICTACTOE</string>
+    <string name="btn_playtictactoe">Play</string>
+    <string name="btn_quitgame">RAGE QUIT</string>
+    <string name="btn_resetgame">RESET</string>
+    <string name="tv_gamestate_p1turn">Player O\'s turn</string>
+    <string name="tv_gamestate_p2turn">Player X\'s turn</string>
+    <string name="tv_gamestate_p1win">Player O Wins!</string>
+    <string name="tv_gamestate_p2win">Player X Wins!</string>
+    <string name="tv_gamestate_lose">Stalemate!</string>
 
     <string name="btn_app_connectThree">Play Connect Three</string>
     <string name="ct_btn_back">Back</string>

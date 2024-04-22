@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttLayExercise = (Button) findViewById(R.id.btnLayoutExercise);
         Button buttButtExercise = (Button) findViewById(R.id.btnButtonExercise);
         Button buttCalcExercise = (Button) findViewById(R.id.btnOpenCalcu);
-        Button buttTicTacExercise = (Button) findViewById(R.id.btnOpenTicTacToe);
+        Button buttTicTacMidterm = (Button) findViewById(R.id.btnOpenTicTacToe);
         Button buttConnectExercise = (Button) findViewById(R.id.btnConnectThree);
         Button buttPassingIntents = (Button) findViewById(R.id.btnOpenIntents);
         Button buttFragments = (Button) findViewById(R.id.btnOpenFragments);
@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         buttConnectExercise.setOnClickListener(v -> openConnectThree());
 
         buttPassingIntents.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, PassingIntentsExercise.class)));
+
+        buttTicTacMidterm.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TicTacToeMidterm.class)));
     }
 
     public void openLayoutExercise(){

@@ -38,6 +38,9 @@
         <activity
             android:name=".ConnectThreeExercise"
             android:exported="false" />
+        <activity
+            android:name=".TicTacToeMidterm"
+            android:exported="false" />
     </application>
 
 </manifest>
