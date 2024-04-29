@@ -12,9 +12,12 @@
         android:theme="@style/Theme.AndroidProjectCollection.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:theme="@style/Theme.AndroidProjectCollection"
-            android:name=".MenuExercise"
+            android:name=".MapsExercise"
             android:exported="false" />
+        <activity
+            android:name=".MenuExercise"
+            android:exported="false"
+            android:theme="@style/Theme.AndroidProjectCollection" />
         <activity
             android:name=".PassingIntentsExercise2"
             android:exported="false" />

@@ -87,4 +87,12 @@
 
     <string name="what">\?\?\?</string>
 
+    <string name="btn_app_map">Open Maps</string>
+    <string name="map_tv_title">Where would you like to go???</string>
+    <string name="map_tv_elcap">El Capitan</string>
+    <string name="map_tv_siargao">Siargao Retreat</string>
+    <string name="map_tv_tokyo">Tokyo Tower</string>
+    <string name="map_tv_rabbit">Fying Rabbit</string>
+    <string name="map_tv_monica">Santa Monica Studios</string>
+
 </resources>
